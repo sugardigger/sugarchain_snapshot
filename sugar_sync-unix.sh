@@ -24,7 +24,7 @@ echo ".."
 echo "."
 
 # download network chain
-wget -x -nH -i https://raw.githubusercontent.com/sugardigger/sugarchain_snapshot/main/manifest/${args[1]}.txt --no-check-certificate --cut-dirs=1 --directory-prefix=${args[0]}
+wget -x -nH -i https://raw.githubusercontent.com/sugardigger/sugarchain_snapshot/main/manifest/${args[1]}.txt --no-check-certificate --cut-dirs=1 --directory-prefix=${args[0]} -q --show-progress --progress=bar:force 2>&1
 
 # remove temp manifest.txt
 rm -rf ${args[0]}/sugarchain_snapshot
