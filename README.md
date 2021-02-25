@@ -16,3 +16,6 @@ start sync (make sure the path is direct)
 # usage:
 # ./sugar_sync-unix.sh chain_path network
 ```
+
+## why is this a thing
+Currently it may take upto 3 days to fully sync Sugarchain from genesis, so this tool was created as a temporary solution to help mitigate the slow initial sync.
