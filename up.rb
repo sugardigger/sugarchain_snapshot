@@ -49,6 +49,7 @@ raw_manifest.each do |m|
   manifest << ["https://#{bucket}.#{s3_endpoint.gsub("https://", "")}", key].join("/")
 end
 
-File.write("manifest.txt", manifest.join("\n"))
+puts "[INFO:] writing manifest/#{network}.txt"
+File.write("manifest/#{network}.txt", manifest.join("\n"))
 
 puts "[INFO:] done :)"
